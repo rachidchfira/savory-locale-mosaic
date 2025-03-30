@@ -1,5 +1,6 @@
 
 import { useState } from "react";
+import { motion } from "framer-motion";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Menu from "@/components/Menu";
@@ -13,14 +14,19 @@ const Index = () => {
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage }}>
-      <div className="min-h-screen bg-amber-50">
+      <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        className="min-h-screen bg-amber-50"
+      >
         <Navbar />
         <Hero />
         <Menu />
         <About />
         <Contact />
         <Footer />
-      </div>
+      </motion.div>
     </LanguageContext.Provider>
   );
 };

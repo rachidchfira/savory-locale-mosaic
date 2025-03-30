@@ -2,6 +2,7 @@
 import { useContext } from "react";
 import { LanguageContext, translations } from "@/utils/language";
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   const { language } = useContext(LanguageContext);
@@ -9,30 +10,60 @@ const Hero = () => {
 
   return (
     <section className="relative">
-      <div className="absolute inset-0 bg-gradient-to-r from-amber-900/70 to-red-900/70 z-10" />
-      <div className="relative h-[70vh] bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1569058242567-93de6f36f8eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')" }}>
+      {/* Dark overlay with gradient */}
+      <div className="absolute inset-0 bg-gradient-to-r from-amber-900/80 to-red-900/80 z-10" />
+      
+      {/* Hero background */}
+      <div 
+        className="relative h-[85vh] bg-cover bg-center" 
+        style={{ 
+          backgroundImage: "url('https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')",
+          backgroundAttachment: "fixed"
+        }}
+      >
         <div className="container relative h-full flex flex-col items-center justify-center text-center z-20">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-            Món Canh
-          </h1>
-          <p className="text-xl md:text-2xl text-white mb-8 max-w-2xl">
-            {t.heroSubtitle}
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="bg-red-700 hover:bg-red-800">
-              {t.reserveTable}
-            </Button>
-            <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/20">
-              <a href="#menu">{t.viewMenu}</a>
-            </Button>
-          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="max-w-4xl mx-auto px-4"
+          >
+            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-lg">
+              Món Canh
+            </h1>
+            <p className="text-xl md:text-2xl text-white mb-10 max-w-2xl mx-auto drop-shadow-md">
+              {t.heroSubtitle}
+            </p>
+            <div className="flex flex-col sm:flex-row gap-5 justify-center">
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Button size="lg" className="bg-red-700 hover:bg-red-800 text-lg px-8 py-6">
+                  {t.reserveTable}
+                </Button>
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Button 
+                  size="lg" 
+                  variant="outline" 
+                  className="bg-amber-800/50 text-white border-white hover:bg-amber-700 text-lg px-8 py-6"
+                >
+                  <a href="#menu">{t.viewMenu}</a>
+                </Button>
+              </motion.div>
+            </div>
+          </motion.div>
         </div>
       </div>
-      {/* Wave divider */}
-      <div className="absolute bottom-0 left-0 w-full overflow-hidden">
+      
+      {/* Improved wave divider */}
+      <div className="absolute -bottom-1 left-0 w-full overflow-hidden">
         <svg
-          className="relative block w-full h-10 md:h-20"
-          data-name="Layer 1"
+          className="relative block w-full h-16 md:h-24"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
           preserveAspectRatio="none"
