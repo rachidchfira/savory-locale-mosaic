@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,22 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Custom colors for restaurant theme
+				'red-vietnam': {
+					50: '#fff5f5',
+					100: '#fed7d7',
+					500: '#e53e3e',
+					700: '#c53030',
+					800: '#9b2c2c',
+					900: '#742a2a',
+				},
+				'amber-vietnam': {
+					50: '#fffbeb',
+					100: '#fef3c7',
+					500: '#f59e0b',
+					700: '#b45309',
+				},
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
