@@ -1,4 +1,3 @@
-
 import { createContext } from "react";
 
 export type Language = "en" | "tw" | "vi";
@@ -14,7 +13,7 @@ export const translations = {
     // Hero
     heroTitle: "Authentic Taiwanese-Vietnamese Cuisine",
     heroSubtitle: "Experience the best of both culinary traditions in Taichung",
-    reserveTable: "Reserve a Table",
+    reserveTable: "Order Now",
     viewMenu: "View Menu",
     
     // Menu
@@ -70,7 +69,7 @@ export const translations = {
     // Hero
     heroTitle: "正宗台越美食",
     heroSubtitle: "在台中體驗兩種烹飪傳統的精華",
-    reserveTable: "預訂座位",
+    reserveTable: "立即訂購",
     viewMenu: "查看菜單",
     
     // Menu
@@ -82,12 +81,12 @@ export const translations = {
     // Menu items
     phoBo: "河粉Phở Bò - 牛肉河粉",
     phoHaiSan: "河粉Phở Hải Sản - 海鮮河粉",
-    phoThitHeo: "豬肉河粉Phở Thịt Heo - 豬肉河粉",
+    phoThitHeo: "豬肉河粉Phở Thịт Heo - 豬肉河粉",
     bunMangVit: "鴨肉米線Bún Măng Vịt - 鴨肉米線",
     comBoXao: "牛肉飯Cơm Bò Xào - 炒牛肉飯",
     comSuon: "排骨飯Cơm Sườn - 排骨飯",
     bunBoXao: "牛肉米線Bún Bò Xào - 炒牛肉米線",
-    bunThitNuong: "米線Bún Thịt Nướng - 烤肉米線",
+    bunThitNuong: "米線Bún Thịт Nướng - 烤肉米線",
     bunChaLua: "米線Bún Chả Lụa - 越式火腿米線",
     thitNuong: "單點烤肉Thịt Nướng - 烤肉",
     thitBoXao: "單點蔥爆牛肉Thịt Bò Xào - 蔥爆牛肉",
@@ -126,7 +125,7 @@ export const translations = {
     // Hero
     heroTitle: "Ẩm Thực Đài-Việt Chính Thống",
     heroSubtitle: "Trải nghiệm tinh hoa của hai nền ẩm thực tại Taichung",
-    reserveTable: "Đặt Bàn",
+    reserveTable: "Đặt Hàng Ngay",
     viewMenu: "Xem Thực Đơn",
     
     // Menu

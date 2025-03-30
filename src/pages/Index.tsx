@@ -10,7 +10,7 @@ import Footer from "@/components/Footer";
 import { translations, LanguageContext, Language } from "@/utils/language";
 
 const Index = () => {
-  const [language, setLanguage] = useState<Language>("en");
+  const [language, setLanguage] = useState<Language>("tw");
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage }}>
