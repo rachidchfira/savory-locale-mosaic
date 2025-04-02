@@ -1,4 +1,3 @@
-
 import { useContext } from "react";
 import { LanguageContext, translations } from "@/utils/language";
 
@@ -16,11 +15,23 @@ const About = () => {
             <p className="text-gray-700">{t.aboutSubtext}</p>
           </div>
           <div className="order-1 md:order-2 flex justify-center">
-            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-8 border-amber-100">
+            <div className="relative w-64 md:w-80 overflow-hidden border-4 border-amber-100 rounded-lg">
               <img
-                src="/lovable-uploads/5e5e35d4-02f0-4e8b-a353-d34536e767f1.png"
+                src="/lovable-uploads/chef dang.jpg"
                 alt="Chef"
-                className="w-full h-full object-cover"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+=======
+            <p className="text-gray-700">{t.aboutSubtext}</p>
+          </div>
+          <div className="order-1 md:order-2 flex justify-center">
+            <div className="relative w-64 md:w-80 overflow-hidden border-4 border-amber-100 rounded-lg">
+              <img
+                src="/lovable-uploads/chef dang.jpg"
+                alt="Chef"
+                className="w-full h-auto object-contain"
+>>>>>>> da00537 (Initial commit: Updated website with logo, opening hours, and Facebook link)
               />
             </div>
           </div>

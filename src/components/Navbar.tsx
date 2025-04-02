@@ -8,6 +8,7 @@ const Navbar = () => {
   const t = translations[language];
 
   return (
+<<<<<<< HEAD
     <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center">
@@ -32,6 +33,33 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-4">
+=======
+    <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm relative">
+      <div className="container flex h-28 items-center justify-between relative">
+        <div className="flex items-center">
+          <a href="#">
+            <img 
+              src="/lovable-uploads/logo5.png" 
+              alt="Restaurant Logo" 
+              className="h-24 w-auto"
+            />
+          </a>
+        </div>
+
+        <div className="flex flex-row items-center gap-6 overflow-x-auto whitespace-nowrap px-2">
+          <a href="#" className="text-lg font-semibold text-gray-800 hover:text-red-700 transition-colors">
+            {t.home}
+          </a>
+          <a href="#menu" className="text-lg font-semibold text-gray-800 hover:text-red-700 transition-colors">
+            {t.menu}
+          </a>
+          <a href="#about" className="text-lg font-semibold text-gray-800 hover:text-red-700 transition-colors">
+            {t.about}
+          </a>
+        </div>
+
+        <div className="flex items-center gap-4 ml-4">
+>>>>>>> da00537 (Initial commit: Updated website with logo, opening hours, and Facebook link)
           <LanguageSwitcher />
         </div>
       </div>

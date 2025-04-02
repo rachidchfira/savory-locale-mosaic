@@ -1,9 +1,20 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> da00537 (Initial commit: Updated website with logo, opening hours, and Facebook link)
 import { useContext } from "react";
 import { LanguageContext, translations } from "@/utils/language";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
+<<<<<<< HEAD
+=======
+const scrollToContact = () => {
+  const contactSection = document.getElementById('contact');
+  contactSection?.scrollIntoView({ behavior: 'smooth' });
+};
+
+>>>>>>> da00537 (Initial commit: Updated website with logo, opening hours, and Facebook link)
 const Hero = () => {
   const { language } = useContext(LanguageContext);
   const t = translations[language];
@@ -11,6 +22,7 @@ const Hero = () => {
   return (
     <section className="relative">
       {/* Dark overlay with gradient */}
+<<<<<<< HEAD
       <div className="absolute inset-0 bg-gradient-to-r from-amber-900/80 to-red-900/80 z-10" />
       
       {/* Hero background */}
@@ -19,6 +31,18 @@ const Hero = () => {
         style={{ 
           backgroundImage: "url('https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')",
           backgroundAttachment: "fixed"
+=======
+      <div className="absolute inset-0 bg-gradient-to-r from-amber-900/60 to-red-900/60 z-10" />
+      
+      {/* Hero background - updated to ensure full image display */}
+      <div 
+        className="relative h-[85vh] bg-cover bg-center" 
+        style={{ 
+          backgroundImage: "url('/lovable-uploads/pho-bo.jpg')",
+          backgroundAttachment: "fixed",
+          backgroundSize: "cover",
+          backgroundPosition: "center"
+>>>>>>> da00537 (Initial commit: Updated website with logo, opening hours, and Facebook link)
         }}
       >
         <div className="container relative h-full flex flex-col items-center justify-center text-center z-20">
@@ -29,7 +53,11 @@ const Hero = () => {
             className="max-w-4xl mx-auto px-4"
           >
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-lg">
+<<<<<<< HEAD
               Món Canh
+=======
+              {t.restaurantName}
+>>>>>>> da00537 (Initial commit: Updated website with logo, opening hours, and Facebook link)
             </h1>
             <p className="text-xl md:text-2xl text-white mb-10 max-w-2xl mx-auto drop-shadow-md">
               {t.heroSubtitle}
@@ -39,7 +67,15 @@ const Hero = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
+<<<<<<< HEAD
                 <Button size="lg" className="bg-red-700 hover:bg-red-800 text-lg px-8 py-6">
+=======
+                <Button 
+                  size="lg" 
+                  className="bg-red-700 hover:bg-red-800 text-lg px-8 py-6"
+                  onClick={scrollToContact}
+                >
+>>>>>>> da00537 (Initial commit: Updated website with logo, opening hours, and Facebook link)
                   {t.reserveTable}
                 </Button>
               </motion.div>
