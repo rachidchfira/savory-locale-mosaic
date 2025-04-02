@@ -22,18 +22,6 @@ const About = () => {
                 className="w-full h-auto object-contain"
               />
             </div>
-=======
-            <p className="text-gray-700">{t.aboutSubtext}</p>
-          </div>
-          <div className="order-1 md:order-2 flex justify-center">
-            <div className="relative w-64 md:w-80 overflow-hidden border-4 border-amber-100 rounded-lg">
-              <img
-                src="/lovable-uploads/chef dang.jpg"
-                alt="Chef"
-                className="w-full h-auto object-contain"
->>>>>>> da00537 (Initial commit: Updated website with logo, opening hours, and Facebook link)
-              />
-            </div>
           </div>
         </div>
       </div>

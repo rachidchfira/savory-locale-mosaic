@@ -1,11 +1,6 @@
-
 import { useContext } from "react";
 import { LanguageContext, translations } from "@/utils/language";
-<<<<<<< HEAD
-import { Facebook, Instagram, Twitter } from "lucide-react";
-=======
 import { Facebook } from "lucide-react";
->>>>>>> da00537 (Initial commit: Updated website with logo, opening hours, and Facebook link)
 
 const Footer = () => {
   const { language } = useContext(LanguageContext);
@@ -16,11 +11,7 @@ const Footer = () => {
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-<<<<<<< HEAD
-            <h3 className="text-xl font-semibold mb-4">Món Canh</h3>
-=======
-            <h3 className="text-xl font-semibold mb-4">{t.restaurantName}</h3>
->>>>>>> da00537 (Initial commit: Updated website with logo, opening hours, and Facebook link)
+            <h3 className="text-xl font-semibold mb-4">{t.heroTitle}</h3>
             <p className="text-gray-300">
               {t.addressText}
             </p>
@@ -35,18 +26,6 @@ const Footer = () => {
           
           <div>
             <h3 className="text-xl font-semibold mb-4">{t.follow}</h3>
-<<<<<<< HEAD
-            <div className="flex space-x-4">
-              <a href="#" className="text-white hover:text-amber-200 transition-colors">
-                <Facebook className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-white hover:text-amber-200 transition-colors">
-                <Instagram className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-white hover:text-amber-200 transition-colors">
-                <Twitter className="h-6 w-6" />
-              </a>
-=======
             <div className="flex">
               <a 
                 href="https://www.facebook.com/profile.php?id=61573757494399&mibextid=wwXIfr&rdid=YxRAsLOiHjPc6CBo&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15Twpo7aZK%2F%3Fmibextid%3DwwXIfr#/"
@@ -56,7 +35,6 @@ const Footer = () => {
               >
                 <Facebook className="h-6 w-6" />
               </a>
->>>>>>> da00537 (Initial commit: Updated website with logo, opening hours, and Facebook link)
             </div>
           </div>
         </div>
