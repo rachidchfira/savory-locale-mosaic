@@ -2,31 +2,8 @@ import { createContext } from "react";
 
 export type Language = "en" | "tw" | "vi";
 
-interface Review {
-  id: string;
-  dishId: string;
-  rating: number;
-  comment: string;
-  timestamp: number;
-}
-
 export const translations = {
   en: {
-    // Reviews
-    reviews: "Reviews",
-    writeReview: "Write a Review",
-    yourRating: "Your Rating",
-    yourComment: "Your Comment",
-    submitReview: "Submit Review",
-    recentReviews: "Recent Reviews",
-    noReviews: "No reviews yet",
-    maxCharacters: "Maximum 200 characters",
-    reviewPlaceholder: "Share your experience with this dish...",
-    reviewSuccess: "Review submitted successfully",
-    reviewError: "Error submitting review",
-    averageRating: "Average Rating",
-    cancel: "Cancel",
-    
     // Navbar
     home: "Home",
     menu: "Menu",
@@ -85,21 +62,6 @@ export const translations = {
     termsOfService: "Terms of Service",
   },
   tw: {
-    // Reviews
-    reviews: "評論",
-    writeReview: "寫評論",
-    yourRating: "您的評分",
-    yourComment: "您的評論",
-    submitReview: "提交評論",
-    recentReviews: "最新評論",
-    noReviews: "尚無評論",
-    maxCharacters: "最多200字",
-    reviewPlaceholder: "分享您對這道菜的體驗...",
-    reviewSuccess: "評論提交成功",
-    reviewError: "提交評論時出錯",
-    averageRating: "平均評分",
-    cancel: "取消",
-    
     // Navbar
     home: "首頁",
     menu: "菜單",
@@ -158,21 +120,6 @@ export const translations = {
     termsOfService: "服務條款",
   },
   vi: {
-    // Reviews
-    reviews: "Đánh giá",
-    writeReview: "Viết đánh giá",
-    yourRating: "Đánh giá của bạn",
-    yourComment: "Nhận xét của bạn",
-    submitReview: "Gửi đánh giá",
-    recentReviews: "Đánh giá gần đây",
-    noReviews: "Chưa có đánh giá nào",
-    maxCharacters: "Tối đa 200 ký tự",
-    reviewPlaceholder: "Chia sẻ trải nghiệm của bạn về món ăn này...",
-    reviewSuccess: "Gửi đánh giá thành công",
-    reviewError: "Lỗi khi gửi đánh giá",
-    averageRating: "Đánh giá trung bình",
-    cancel: "Hủy",
-    
     // Navbar
     home: "Trang chủ",
     menu: "Thực đơn",
