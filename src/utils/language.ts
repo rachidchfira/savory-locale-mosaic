@@ -1,6 +1,6 @@
 import { createContext } from "react";
 
-export type Language = "en" | "tw" | "vi";
+export type Language = "en" | "zhTW" | "vi";
 
 export const translations = {
   en: {
@@ -20,6 +20,7 @@ export const translations = {
     menuTitle: "Our Menu",
     menuSubtitle: "Handcrafted with love and tradition",
     orderNow: "Order Now",
+    loadingMenu: "Loading menu items...",
 
     // Menu items
     phoBo: "Phở Bò - Beef Noodle Soup",
@@ -40,6 +41,24 @@ export const translations = {
     comSuon: "Cơm Sườn - Pork Chop Rice",
     comSuonDesc: "Grilled marinated pork chop served with steamed rice, fresh vegetables, and traditional dipping sauce.",
     
+    advertisement: "Special Advertisement",
+    advertisementDesc: "Check out our special promotions and new menu items!",
+
+    bunMangVit: "Bún Măng Vịt - Duck and Bamboo Noodle Soup",
+    bunMangVitDesc: "Traditional Vietnamese rice noodle soup with tender duck meat and bamboo shoots in a savory broth.",
+    
+    chaLua: "Chả Lụa - Vietnamese Pork Roll",
+    chaLuaDesc: "Traditional Vietnamese pork sausage seasoned with fish sauce and black pepper, served with fresh herbs.",
+
+    goiCuon: "Gỏi Cuốn - Vietnamese Spring Rolls",
+    goiCuonDesc: "Fresh rice paper rolls filled with shrimp, pork, vermicelli noodles, and herbs, served with peanut dipping sauce.",
+
+    caPheSua: "Vietnamese Coffee - Cà Phê Sữa",
+    caPheSuaDesc: "Traditional Vietnamese coffee brewed with robusta beans and sweetened condensed milk, served hot or iced.",
+
+    thitSuonChien: "Thịt Sườn Chiên - Fried Pork Side",
+    thitSuonChienDesc: "Crispy fried pork ribs seasoned with Vietnamese spices, perfect as a side dish or appetizer.",
+    
     // About
     aboutTitle: "About Our Chef",
     aboutText: "Meet Chef Thái Đặng, our talented head chef who brings over 4 years of culinary experience from both Taiwan and Vietnam. Chef Thái specializes in authentic Vietnamese soups and Taiwanese street food, creating unique fusion dishes that honor both traditions.",
@@ -57,11 +76,11 @@ export const translations = {
     
     // Footer
     follow: "Follow Us",
-    copyright: "© 2023 Taiwanese-Vietnamese Cuisine. All rights reserved.",
+    copyright: "© 2025 Taiwanese-Vietnamese Cuisine. All rights reserved.",
     privacyPolicy: "Privacy Policy",
     termsOfService: "Terms of Service",
   },
-  tw: {
+  zhTW: {
     // Navbar
     home: "首頁",
     menu: "菜單",
@@ -78,6 +97,7 @@ export const translations = {
     menuTitle: "我們的菜單",
     menuSubtitle: "用愛和傳統手工製作",
     orderNow: "立即訂購",
+    loadingMenu: "正在載入菜單...",
     
     // Menu items
     phoBo: "河粉Phở Bò - 牛肉河粉",
@@ -98,6 +118,24 @@ export const translations = {
     comSuon: "排骨飯Cơm Sườn - 排骨飯",
     comSuonDesc: "烤醃製豬排配以白飯、新鮮蔬菜和傳統蘸料。",
     
+    advertisement: "特別廣告",
+    advertisementDesc: "查看我們的特別優惠和新菜品！",
+
+    bunMangVit: "米線Bún Măng Vịt - 鴨肉竹筍米線",
+    bunMangVitDesc: "傳統越南米線搭配鮮嫩鴨肉和竹筍，配以美味湯底。",
+    
+    chaLua: "越式火腿",
+    chaLuaDesc: "傳統越南火腿配以特製醬料和香料調味，搭配新鮮蔬菜。",
+
+    goiCuon: "春捲Gỏi Cuốn - 越式春捲",
+    goiCuonDesc: "新鮮米紙卷，內餡包含蝦仁、豬肉、米線和香草，搭配花生醬。",
+
+    caPheSua: "越南咖啡 - Cà Phê Sữa",
+    caPheSuaDesc: "傳統越南咖啡以羅布斯塔咖啡豆製成，搭配煉乳，可選擇熱飲或冰飲。",
+
+    thitSuonChien: "炸豬排 Thịt Sườn Chiên - 單點烤肉",
+    thitSuonChienDesc: "香脆炸豬排配以越南特色調味料，可做為配菜或開胃菜。",
+    
     // About
     aboutTitle: "關於我們的主廚",
     aboutText: "認識Thái Đặng主廚，我們才華橫溢的主廚，擁有超過4年來自台灣和越南的烹飪經驗。Thái主廚專精於正宗越南湯品和台灣街頭美食，創造尊重兩種傳統的獨特融合菜餚。",
@@ -115,7 +153,7 @@ export const translations = {
     
     // Footer
     follow: "關注我們",
-    copyright: "© 2023 越小廚。版權所有。",
+    copyright: "© 2025 越小廚。版權所有。",
     privacyPolicy: "隱私政策",
     termsOfService: "服務條款",
   },
@@ -136,6 +174,7 @@ export const translations = {
     menuTitle: "Thực Đơn Của Chúng Tôi",
     menuSubtitle: "Chế biến với tình yêu và truyền thống",
     orderNow: "Đặt Món Ngay",
+    loadingMenu: "Đang tải thực đơn...",
     
     // Menu items
     phoBo: "Phở Bò",
@@ -156,6 +195,24 @@ export const translations = {
     comSuon: "Cơm Sườn",
     comSuonDesc: "Sườn heo nướng ướp gia vị phục vụ với cơm trắng, rau tươi và nước chấm truyền thống.",
     
+    advertisement: "Quảng Cáo Đặc Biệt",
+    advertisementDesc: "Xem các khuyến mãi đặc biệt và món ăn mới của chúng tôi!",
+
+    bunMangVit: "Bún Măng Vịt",
+    bunMangVitDesc: "Bún truyền thống Việt Nam với thịt vịt mềm và măng tươi trong nước dùng đậm đà.",
+    
+    chaLua: "Chả Lụa",
+    chaLuaDesc: "Chả lụa truyền thống được làm từ thịt heo, ướp nước mắm và tiêu đen, dùng kèm rau thơm.",
+
+    goiCuon: "Gỏi Cuốn",
+    goiCuonDesc: "Bánh tráng cuốn tươi với tôm, thịt heo, bún và rau thơm, dùng kèm nước chấm đậu phộng.",
+
+    caPheSua: "Cà Phê Sữa",
+    caPheSuaDesc: "Cà phê truyền thống Việt Nam pha từ cà phê robusta và sữa đặc có đường, có thể uống nóng hoặc đá.",
+
+    thitSuonChien: "Thịt Sườn Chiên",
+    thitSuonChienDesc: "Sườn heo chiên giòn ướp gia vị đặc trưng Việt Nam, phù hợp làm món ăn kèm hoặc khai vị.",
+    
     // About
     aboutTitle: "Về Đầu Bếp Của Chúng Tôi",
     aboutText: "Gặp gỡ Đầu bếp Thái Đặng, đầu bếp tài năng của chúng tôi với hơn 4 năm kinh nghiệm ẩm thực từ cả Đài Loan và Việt Nam. Đầu bếp Thái chuyên về các món súp Việt Nam chính gốc và món ăn đường phố Đài Loan, tạo ra các món ăn kết hợp độc đáo tôn vinh cả hai truyền thống.",
@@ -173,7 +230,7 @@ export const translations = {
     
     // Footer
     follow: "Theo Dõi Chúng Tôi",
-    copyright: "© 2023 Ẩm Thực Đài-Việt. Tất cả các quyền được bảo lưu.",
+    copyright: "© 2025 Ẩm Thực Đài-Việt. Tất cả các quyền được bảo lưu.",
     privacyPolicy: "Chính Sách Bảo Mật",
     termsOfService: "Điều Khoản Dịch Vụ",
   }

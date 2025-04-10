@@ -25,10 +25,10 @@ const LanguageSwitcher = () => {
       </Button>
       <Button 
         size="sm"
-        variant={language === 'tw' ? 'default' : 'outline'}
-        onClick={() => onLanguageChange('tw')}
+        variant={language === 'zhTW' ? 'default' : 'outline'}
+        onClick={() => onLanguageChange('zhTW')}
         className={`text-sm px-3 py-1 ${
-          language === 'tw' 
+          language === 'zhTW' 
             ? 'bg-red-700 hover:bg-red-800 text-white' 
             : 'text-red-700 hover:text-red-800'
         }`}

@@ -1,5 +1,4 @@
 
-import { useState } from "react";
 import { motion } from "framer-motion";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
@@ -7,14 +6,10 @@ import Menu from "@/components/Menu";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import { translations, LanguageContext, Language } from "@/utils/language";
 
 const Index = () => {
-  const [language, setLanguage] = useState<Language>("tw");
-
   return (
-    <LanguageContext.Provider value={{ language, setLanguage }}>
-      <motion.div 
+    <motion.div 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
@@ -27,7 +22,6 @@ const Index = () => {
         <Contact />
         <Footer />
       </motion.div>
-    </LanguageContext.Provider>
   );
 };
 

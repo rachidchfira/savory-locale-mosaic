@@ -1,42 +1,105 @@
-#root {
-  max-width: 1280px;
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7c2d12;
+  border-radius: 6px;
+  border: 3px solid #f5f5f4;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9a3412;
+}
+
+/* Smooth Scroll Behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base Styles */
+body {
+  background-color: #fffbeb;
+  color: #1c1917;
+}
+
+/* Image Loading Animation */
+img {
+  opacity: 1;
+  transition: transform 0.3s ease;
+}
+
+/* Container Max Width */
+.container {
+  max-width: 1280px !important;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 0 1rem;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Card Hover Effects */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-@keyframes logo-spin {
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+/* Button Hover Effects */
+button {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Text Selection Color */
+::selection {
+  background-color: #fbbf24;
+  color: #7c2d12;
+}
+
+/* Link Hover Effects */
+a {
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #9a3412;
+}
+
+/* Section Transitions */
+section {
+  opacity: 0;
+  animation: sectionFadeIn 1s ease-out forwards;
+}
+
+@keyframes sectionFadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(20px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+/* Gradient Text Effect */
+.gradient-text {
+  background: linear-gradient(135deg, #7c2d12 0%, #b45309 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }

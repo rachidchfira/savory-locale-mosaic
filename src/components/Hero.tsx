@@ -10,14 +10,14 @@ const scrollToContact = () => {
 
 const FloatingElement = ({ delay, x, y }: { delay: number; x: number; y: number }) => (
   <motion.div
-    className="absolute w-4 h-4 bg-white/10 rounded-full backdrop-blur-sm"
-    initial={{ opacity: 0, scale: 0 }}
-    animate={{ opacity: 1, scale: 1 }}
+    className="absolute w-4 h-4 bg-white/20 rounded-full backdrop-blur-md"
+    initial={{ opacity: 0, scale: 0, y: 10 }}
+    animate={{ opacity: [0, 1, 0], scale: [0.8, 1.2, 0.8], y: [-10, -20, -30] }}
     transition={{
-      duration: 2,
+      duration: 3,
       delay,
       repeat: Infinity,
-      repeatType: "reverse"
+      ease: "easeInOut"
     }}
     style={{ left: `${x}%`, top: `${y}%` }}
   />
@@ -43,31 +43,37 @@ const Hero = () => {
 
   return (
     <section className="relative h-screen">
-      {/* Enhanced gradient overlay */}
+      {/* Enhanced gradient overlays */}
       <motion.div 
-        className="absolute inset-0 bg-gradient-to-br from-amber-900/50 via-red-900/40 to-amber-800/50 mix-blend-multiply z-10"
+        className="absolute inset-0 bg-gradient-to-br from-amber-900/70 via-red-900/60 to-amber-800/70 mix-blend-multiply z-10"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(0,0,0,0.2),transparent_70%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(0,0,0,0.3),transparent_70%)]" />
       </motion.div>
+      <div className="absolute inset-0 bg-black/10 z-[5]" />
       
-      {/* Hero background */}
+      {/* Parallax Hero background */}
       <motion.div 
         className="relative h-full bg-cover bg-center overflow-hidden"
         style={{ 
           y,
-          backgroundImage: "url('/lovable-uploads/pho-bo.jpg')",
+          backgroundImage: `url(${encodeURI('/images/pho.png')})`,
           backgroundSize: "cover",
-          backgroundPosition: "center"
+          backgroundPosition: "center 30%",
+          transformOrigin: "center 30%",
         }}
       >
-        {/* Floating elements */}
-        <FloatingElement delay={0} x={20} y={30} />
-        <FloatingElement delay={0.5} x={80} y={20} />
-        <FloatingElement delay={1} x={40} y={70} />
-        <FloatingElement delay={1.5} x={70} y={60} />
+        {/* Steam effect with more elements */}
+        <FloatingElement delay={0} x={35} y={15} />
+        <FloatingElement delay={0.2} x={65} y={20} />
+        <FloatingElement delay={0.4} x={40} y={25} />
+        <FloatingElement delay={0.6} x={60} y={30} />
+        <FloatingElement delay={0.8} x={45} y={20} />
+        <FloatingElement delay={1.0} x={55} y={25} />
+        <FloatingElement delay={1.2} x={50} y={15} />
+        <FloatingElement delay={1.4} x={42} y={30} />
 
         {/* Content */}
         <div className="container relative h-full flex flex-col items-center justify-center text-center z-20">
@@ -78,7 +84,7 @@ const Hero = () => {
             transition={{ duration: 1 }}
           >
             <motion.h1 
-              className="text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-[0_4px_3px_rgb(0,0,0,0.4)]"
+              className="text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-[0_4px_3px_rgb(0,0,0,0.5)] tracking-tight"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -86,7 +92,7 @@ const Hero = () => {
               {t.heroTitle}
             </motion.h1>
             <motion.p 
-              className="text-xl md:text-2xl text-white mb-10 max-w-2xl mx-auto drop-shadow-[0_2px_2px_rgb(0,0,0,0.3)]"
+              className="text-xl md:text-2xl text-white mb-10 max-w-2xl mx-auto drop-shadow-[0_2px_2px_rgb(0,0,0,0.4)] leading-relaxed"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -107,7 +113,7 @@ const Hero = () => {
               >
                 <Button 
                   size="lg" 
-                  className="bg-gradient-to-r from-red-700 to-red-800 hover:from-red-800 hover:to-red-900 text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden"
+                  className="bg-gradient-to-r from-red-700 to-red-800 hover:from-red-800 hover:to-red-900 text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all duration-300 relative overflow-hidden group"
                   onClick={scrollToContact}
                 >
                   {t.reserveTable}
@@ -120,7 +126,7 @@ const Hero = () => {
                 <Button 
                   size="lg" 
                   variant="outline"
-                  className="bg-amber-800/50 text-white border-white hover:bg-amber-700/60 text-lg px-8 py-6 shadow-lg hover:shadow-xl backdrop-blur-sm transition-all duration-300"
+                  className="bg-amber-800/40 text-white border-white/80 hover:bg-amber-700/50 hover:border-white text-lg px-8 py-6 shadow-lg hover:shadow-xl backdrop-blur-sm transition-all duration-300"
                 >
                   <a href="#menu">{t.viewMenu}</a>
                 </Button>
