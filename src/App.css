@@ -1,20 +1,23 @@
-/* Custom Scrollbar */
+/* Vietnamese-Themed Scrollbar */
 ::-webkit-scrollbar {
   width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f5f5f4;
+  background: #fff7ed;
+  background-image: linear-gradient(to bottom, #fff7ed, #ffedd5);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #7c2d12;
+  background: #991b1b;
   border-radius: 6px;
-  border: 3px solid #f5f5f4;
+  border: 2px solid #fff7ed;
+  background-image: linear-gradient(to bottom, #991b1b, #7f1d1d);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #9a3412;
+  background: #b91c1c;
+  background-image: linear-gradient(to bottom, #b91c1c, #991b1b);
 }
 
 /* Smooth Scroll Behavior */
@@ -22,10 +25,15 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Base Styles */
+/* Vietnamese-Inspired Color Scheme */
 body {
-  background-color: #fffbeb;
+  background-color: #fff7ed;
+  background-image: 
+    radial-gradient(at 80% 0%, hsla(24,80%,80%,0.2) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, hsla(10,80%,80%,0.2) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, hsla(24,80%,80%,0.2) 0px, transparent 50%);
   color: #1c1917;
+  background-attachment: fixed;
 }
 
 /* Image Loading Animation */
@@ -96,10 +104,23 @@ section {
   }
 }
 
-/* Gradient Text Effect */
+/* Vietnamese-Inspired Gradient Text */
 .gradient-text {
-  background: linear-gradient(135deg, #7c2d12 0%, #b45309 100%);
+  background: linear-gradient(135deg, #991b1b 0%, #b45309 50%, #92400e 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Vietnamese Pattern Overlay */
+.vietnamese-pattern::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/vietnamese-pattern.png');
+  background-size: 300px;
+  opacity: 0.05;
+  pointer-events: none;
+  mix-blend-mode: overlay;
 }

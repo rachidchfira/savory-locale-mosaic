@@ -26,11 +26,11 @@ const Menu: React.FC = () => {
     { img: menuImages.bunChaLua, title: t.bunChaLua, desc: t.bunChaLuaDesc, price: 100 },
     { img: menuImages.comBoXao, title: t.comBoXao, desc: t.comBoXaoDesc, price: 100 },
     { img: menuImages.comSuon, title: t.comSuon, desc: t.comSuonDesc, price: 100 },
-    { img: menuImages.chaLua, title: t.chaLua, desc: t.chaLuaDesc, price: 80 },
-    { img: menuImages.bunMangVit, title: t.bunMangVit, desc: t.bunMangVitDesc, price: 100 },
-    { img: menuImages.goiCuon, title: t.goiCuon, desc: t.goiCuonDesc, price: 110 },
     { img: menuImages.bunThitNuong, title: t.bunThitNuong, desc: t.bunThitNuongDesc, price: 100 },
     { img: menuImages.thitSuonChien, title: t.thitSuonChien, desc: t.thitSuonChienDesc, price: 100 },
+    { img: menuImages.chaLua, title: t.chaLua, desc: t.chaLuaDesc, price: 80 },
+    { img: menuImages.goiCuon, title: t.goiCuon, desc: t.goiCuonDesc, price: 110 },
+    { img: menuImages.bunMangVit, title: t.bunMangVit, desc: t.bunMangVitDesc, price: 100 },
     { img: menuImages.vietnameseCoffee, title: t.caPheSua, desc: t.caPheSuaDesc, price: 50 }
   ];
 

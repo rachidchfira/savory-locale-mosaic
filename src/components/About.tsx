@@ -7,13 +7,17 @@ const About = () => {
   const t = translations[language];
 
   return (
-    <section id="about" className="py-20 relative bg-gradient-to-b from-white to-amber-50/30">
+    <section id="about" className="py-24 md:py-32 relative bg-gradient-to-b from-white to-amber-50/30 overflow-hidden">
       <div 
         className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,theme(colors.amber.600/0.05)_1px,transparent_0)]" 
         style={{ backgroundSize: '24px 24px' }}
       />
       <div className="absolute inset-0 bg-gradient-to-br from-white/50 via-transparent to-amber-50/30" />
-      <div className="container relative">
+      <div className="container relative px-4">
+        {/* Decorative food elements */}
+        <div className="absolute -left-20 -top-20 w-64 h-64 bg-red-800/10 rounded-full pointer-events-none" />
+        <div className="absolute -right-16 bottom-0 w-48 h-48 bg-amber-600/10 rounded-full pointer-events-none" />
+        <div className="absolute left-1/4 top-1/3 w-8 h-8 bg-gradient-to-br from-red-600 to-amber-500 rounded-full opacity-20 blur-sm pointer-events-none" />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <motion.div 
             className="order-2 md:order-1"

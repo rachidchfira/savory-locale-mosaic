@@ -45,14 +45,15 @@ const Hero = () => {
     <section className="relative h-screen">
       {/* Enhanced gradient overlays */}
       <motion.div 
-        className="absolute inset-0 bg-gradient-to-br from-amber-900/70 via-red-900/60 to-amber-800/70 mix-blend-multiply z-10"
+        className="absolute inset-0 bg-gradient-to-br from-amber-800/30 via-red-800/25 to-amber-700/30 mix-blend-multiply z-10"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(0,0,0,0.3),transparent_70%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(0,0,0,0.2),transparent_70%)]" />
+        <div className="absolute inset-0 bg-[url('/images/vietnamese-pattern.png')] opacity-3 mix-blend-overlay" />
       </motion.div>
-      <div className="absolute inset-0 bg-black/10 z-[5]" />
+      <div className="absolute inset-0 bg-black/3 z-[5]" />
       
       {/* Parallax Hero background */}
       <motion.div 
@@ -84,17 +85,23 @@ const Hero = () => {
             transition={{ duration: 1 }}
           >
             <motion.h1 
-              className="text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-[0_4px_3px_rgb(0,0,0,0.5)] tracking-tight"
+              className="text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-[0_4px_3px_rgb(0,0,0,0.5)] tracking-tight font-serif"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              {t.heroTitle}
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-amber-200 to-white">
+                {t.heroTitle}
+              </span>
             </motion.h1>
             <motion.p 
-              className="text-xl md:text-2xl text-white mb-10 max-w-2xl mx-auto drop-shadow-[0_2px_2px_rgb(0,0,0,0.4)] leading-relaxed"
+              className="text-xl md:text-2xl text-white mb-10 max-w-2xl mx-auto drop-shadow-[0_2px_2px_rgb(0,0,0,0.4)] leading-relaxed font-sans"
               initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              animate={{ 
+                opacity: 1, 
+                y: 0,
+                textShadow: "0 0 8px rgba(255,255,255,0.3)"
+              }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
               {t.heroSubtitle}

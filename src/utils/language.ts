@@ -100,40 +100,40 @@ export const translations = {
     loadingMenu: "正在載入菜單...",
     
     // Menu items
-    phoBo: "河粉Phở Bò - 牛肉河粉",
+    phoBo: "Phở Bò - 牛肉河粉",
     phoBoDesc: "以數小時熬製的濃郁牛肉湯底，搭配河粉、嫩滑牛肉片和香草。配以豆芽和新鮮羅勒。",
     
-    phoHaiSan: "河粉Phở Hải Sản - 海鮮河粉",
+    phoHaiSan: "Phở Hải Sản - 海鮮河粉",
     phoHaiSanDesc: "新鮮海鮮拼盤配以鮮美湯底和河粉，搭配傳統越南香草和香料。",
     
-    bunThitNuong: "米線Bún Thịt Nướng - 烤肉米線",
+    bunThitNuong: "Bún Thịt Nướng - 烤肉米線",
     bunThitNuongDesc: "烤醃製豬肉配以米線、新鮮香草、醃漬蔬菜和魚露調味料。",
     
-    bunChaLua: "米線Bún Chả Lụa - 越式火腿米線",
+    bunChaLua: "Bún Chả Lụa - 越式火腿米線",
     bunChaLuaDesc: "傳統越南火腿配以米線、新鮮香草和清爽的魚露調味料。",
     
-    comBoXao: "牛肉飯Cơm Bò Xào - 炒牛肉飯",
+    comBoXao: "Cơm Bò Xào - 炒牛肉飯",
     comBoXaoDesc: "醃製牛肉與新鮮蔬菜一同翻炒，配以白飯和自製醬料。",
     
-    comSuon: "排骨飯Cơm Sườn - 排骨飯",
+    comSuon: "Cơm Sườn - 排骨飯",
     comSuonDesc: "烤醃製豬排配以白飯、新鮮蔬菜和傳統蘸料。",
     
     advertisement: "特別廣告",
     advertisementDesc: "查看我們的特別優惠和新菜品！",
 
-    bunMangVit: "米線Bún Măng Vịt - 鴨肉竹筍米線",
+    bunMangVit: "Bún Măng Vịt - 鴨肉竹筍米線",
     bunMangVitDesc: "傳統越南米線搭配鮮嫩鴨肉和竹筍，配以美味湯底。",
     
-    chaLua: "越式火腿",
+    chaLua: "Chả Lụa - 越式火腿",
     chaLuaDesc: "傳統越南火腿配以特製醬料和香料調味，搭配新鮮蔬菜。",
 
-    goiCuon: "春捲Gỏi Cuốn - 越式春捲",
+    goiCuon: "Gỏi Cuốn - 越式春捲",
     goiCuonDesc: "新鮮米紙卷，內餡包含蝦仁、豬肉、米線和香草，搭配花生醬。",
 
-    caPheSua: "越南咖啡 - Cà Phê Sữa",
+    caPheSua: "Cà Phê Sữa - 越南咖啡",
     caPheSuaDesc: "傳統越南咖啡以羅布斯塔咖啡豆製成，搭配煉乳，可選擇熱飲或冰飲。",
 
-    thitSuonChien: "炸豬排 Thịt Sườn Chiên - 單點烤肉",
+    thitSuonChien: "Thịt Sườn Chiên - 炸豬排",
     thitSuonChienDesc: "香脆炸豬排配以越南特色調味料，可做為配菜或開胃菜。",
     
     // About
