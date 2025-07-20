@@ -2,7 +2,7 @@
 import phoBo from './pho.png';
 import phoHaiSan from './pho hai san.png';
 import phoNew1 from './pho-new.png';
-import phoNew2 from './pho-new.png';
+import phoNew2 from './pho-tai-nam.jpg';
 import bunChaLua from './Bun Cha Lua.jpg';
 import comBoXao from './Com Bo Xao.jpg';
 import comSuon from './Com Suon.jpg';
