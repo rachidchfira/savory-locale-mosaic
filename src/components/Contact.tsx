@@ -60,7 +60,7 @@ const Contact = () => {
         <div className="mt-12">
           <div className="w-full h-96 rounded-lg overflow-hidden shadow-md">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.6772756961295!2d120.68080587605675!3d24.14226417934151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d0e39eb9e6d%3A0x8cb3c7a456c16b86!2sNo.%20123%2C%20Pingdeng%20Street%2C%20Central%20District%2C%20Taichung%20City%2C%20Taiwan%20400!5e0!3m2!1sen!2sus!4v1715097234956!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.6772756961295!2d120.68080587605675!3d24.14226417934151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d0e39eb9e6d%3A0x8cb3c7a456c16b86!2sNo.%20429%2C%20Section%201%2C%20Taiwan%20Boulevard%2C%20Central%20District%2C%20Taichung%20City%2C%20Taiwan%20400!5e0!3m2!1sen!2sus!4v1715097234956!5m2!1sen!2sus"
               width="100%"
               height="100%"
               style={{ border: 0 }}
