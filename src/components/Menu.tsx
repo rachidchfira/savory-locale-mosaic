@@ -22,6 +22,8 @@ const Menu: React.FC = () => {
 
   const menuItems: MenuItem[] = [
     { img: menuImages.phoBo, title: t.phoBo, desc: t.phoBoDesc, price: 120 },
+    { img: menuImages.phoNew1, title: t.phoNew1, desc: t.phoNew1Desc, price: 150 },
+    { img: menuImages.phoNew2, title: t.phoNew2, desc: t.phoNew2Desc, price: 130 },
     { img: menuImages.phoHaiSan, title: t.phoHaiSan, desc: t.phoHaiSanDesc, price: 100 },
     { img: menuImages.bunChaLua, title: t.bunChaLua, desc: t.bunChaLuaDesc, price: 110 },
     { img: menuImages.comBoXao, title: t.comBoXao, desc: t.comBoXaoDesc, price: 120 },

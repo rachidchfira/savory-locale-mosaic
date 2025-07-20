@@ -29,6 +29,12 @@ export const translations = {
     phoHaiSan: "Phở Hải Sản - Seafood Noodle Soup",
     phoHaiSanDesc: "Fresh seafood medley in a savory broth with rice noodles, complemented by traditional Vietnamese herbs and spices.",
     
+    phoNew1: "Phở Tái Nạm - Fresh Beef with Brisket",
+    phoNew1Desc: "Premium beef pho with fresh beef slices and tender brisket in rich broth, served with fresh herbs and traditional accompaniments.",
+    
+    phoNew2: "Bún Riêu - Seafood Tomato Noodle Soup",
+    phoNew2Desc: "Traditional Vietnamese noodle soup with seafood, tomatoes, and crab paste in savory broth with rice vermicelli.",
+    
     bunThitNuong: "Bún Thịt Nướng - Grilled Meat Noodle",
     bunThitNuongDesc: "Grilled marinated pork served over rice vermicelli with fresh herbs, pickled vegetables, and fish sauce dressing.",
     
@@ -106,6 +112,12 @@ export const translations = {
     phoHaiSan: "Phở Hải Sản - 海鮮河粉",
     phoHaiSanDesc: "新鮮海鮮拼盤配以鮮美湯底和河粉，搭配傳統越南香草和香料。",
     
+    phoNew1: "Phở Tái Nạm - 鮮牛肉加牛腩",
+    phoNew1Desc: "精選牛肉河粉，新鮮牛肉片和嫩滑牛腩配濃郁湯底，新鮮香草和傳統配菜。",
+    
+    phoNew2: "Bún Riêu - 海鮮蕃茄米線",
+    phoNew2Desc: "傳統越南米線湯，海鮮、蕃茄和蟹膏配以鮮美湯底和米線。",
+    
     bunThitNuong: "Bún Thịt Nướng - 烤肉米線",
     bunThitNuongDesc: "烤醃製豬肉配以米線、新鮮香草、醃漬蔬菜和魚露調味料。",
     
@@ -182,6 +194,12 @@ export const translations = {
     
     phoHaiSan: "Phở Hải Sản",
     phoHaiSanDesc: "Hải sản tươi ngon trong nước dùng đặc biệt với bánh phở, kết hợp với các loại rau thơm và gia vị truyền thống Việt Nam.",
+    
+    phoNew1: "Phở Tái Nạm",
+    phoNew1Desc: "Phở bò cao cấp với thịt bò tươi và gầu bò mềm trong nước dùng đậm đà, phục vụ với rau thơm tươi và các món ăn kèm truyền thống.",
+    
+    phoNew2: "Bún Riêu",
+    phoNew2Desc: "Bún riêu truyền thống Việt Nam với hải sản, cà chua và gạch cua trong nước dùng đậm đà với bún tươi.",
     
     bunThitNuong: "Bún Thịt Nướng",
     bunThitNuongDesc: "Thịt heo nướng thơm ngon trên bún tươi với rau thơm, đồ chua, và nước mắm pha.",

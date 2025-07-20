@@ -1,6 +1,8 @@
 // Menu images imports
 import phoBo from './pho.png';
 import phoHaiSan from './pho hai san.png';
+import phoNew1 from './pho-new.png';
+import phoNew2 from './pho-new.png';
 import bunChaLua from './Bun Cha Lua.jpg';
 import comBoXao from './Com Bo Xao.jpg';
 import comSuon from './Com Suon.jpg';
@@ -14,6 +16,8 @@ import vietnameseCoffee from './Vietnamese coffe.png';
 export const menuImages = {
   phoBo,
   phoHaiSan,
+  phoNew1,
+  phoNew2,
   bunChaLua,
   comBoXao,
   comSuon,
